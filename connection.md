@@ -80,4 +80,4 @@ You will most likely need to encapsulate the above command with the following:
 
 #### Post-Server Connection
 
-Once you are connected to the server you should recieve a `1::`
+Once you are connected to the server you should recieve a `1::`, after that you need to send a joinChannel message along with whatever else you want. You will also recieve a `2::` every so often and should respond with a `2::` 
