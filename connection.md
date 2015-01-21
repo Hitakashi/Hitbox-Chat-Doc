@@ -2,7 +2,7 @@
 
 #### Pre-Server Connection (Step 1)
 
-To connect to hitbox chat you should first initiate a HTTP connection to http://api.hitbox.tv/chat/servers?redis=true the result should be the following Json Object 
+To connect to hitbox chat you should first initiate a HTTP GET request to http://api.hitbox.tv/chat/servers?redis=true the result should be the following Json Object 
 
 ```json
 [
@@ -28,7 +28,7 @@ You can pick whatever server from the response, but you should never save the ad
 
 #### Websocket ID (Step 2)
 
-Once you get the server address from above, you should append `/socket.io/1/`. After that you need to send a HTTP GET request to that address for example http://ec2-54-87-229-245.compute-1.amazonaws.com/socket.io/1/ which will return a the following text.
+Once you get the server address from above, you should append `/socket.io/1/` to the address. After that you need to send a HTTP GET request to that address, for example http://ec2-54-87-229-245.compute-1.amazonaws.com/socket.io/1/ which will return the following text.
 
 ```text
 7_wKSaZndijMFrJYCziZ:60:60:websocket
