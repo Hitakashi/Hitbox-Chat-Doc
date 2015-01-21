@@ -65,7 +65,7 @@ Every command sent and revied from the server follows the following general form
 }
 ```
 
-If you are using a Websocket lib you will most likely have to encapsulate the every message with the following
+You will most likely need to encapsulate the above command with the following:
 
 ```json
 {
