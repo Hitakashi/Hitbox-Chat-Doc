@@ -80,4 +80,4 @@ You will most likely need to encapsulate the above command with the following:
 
 #### Post-Server Connection
 
-Once you connect to the server you should first recieve a `1::` after that you need to send a joinChannel (Doc Soon) and then continue on what you what.
+Once you are connected to the server you should recieve a `1::`
