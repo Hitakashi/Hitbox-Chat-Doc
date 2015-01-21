@@ -1,4 +1,4 @@
-# Stick (MOTD) Commands
+# Sticky (MOTD) Commands
 
 The sticky message is basically a MOTD (Message of the day) which shows up at the top of the Website UI.
 
