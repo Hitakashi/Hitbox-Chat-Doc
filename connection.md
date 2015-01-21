@@ -1,6 +1,5 @@
 # How to connect to hitbox Websocket.
 
-##### Prep
-==========
+## Prep
 
 abc
