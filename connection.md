@@ -35,6 +35,8 @@ To start connecting to hitbox chat you should first initiate a HTTP GET request 
 
 You can pick whatever server from the response, but you should never save the address. The servers are ever changing and getting it via the API is the safest method.
 
+At this point you should also get your [auth token](https://github.com/Hitakashi/Hitbox-API/blob/master/auth/login.md#post-authtoken) for the user unless you are planning to login as a guest. 
+
 #### Websocket ID (Step 2)
 
 Once you get the server address from above, you should append `/socket.io/1/` to the address. After that you need to send a HTTP GET request to that address, for example http://ec2-54-87-229-245.compute-1.amazonaws.com/socket.io/1/ which will return the following text.
