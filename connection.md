@@ -1,4 +1,4 @@
-# How to connect to hitbox Websocket.
+# How to connect to hitbox Chat.
 
 #### Pre-Server Connection (Step 1)
 
