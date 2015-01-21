@@ -2,7 +2,7 @@
 
 #### Pre-Server Connection (Step 1)
 
-To connect to hitbox chat you should first initiate a HTTP GET request to http://api.hitbox.tv/chat/servers?redis=true the result should be the following Json Object 
+To start connecting to hitbox chat you should first initiate a HTTP GET request to http://api.hitbox.tv/chat/servers?redis=true the result should be the following Json Object 
 
 ```json
 [
