@@ -23,8 +23,8 @@ To create a giveaway you must be an admin and send the following message:
     ],
     "start_time":"2014­12­10T14:53:33.142Z",
     "nameColor":"Hexcode for color",
-    "subscriberOnly":true    /false,
-    "followerOnly":true    /false
+    "subscriberOnly":true/false,
+    "followerOnly":true/false
   }
 }
 ```
@@ -50,10 +50,10 @@ The server will then send a message like this to the channel:
     ],
     "start_time":"2014­12­10T14:53:33.142Z",
     "status":"started",
-    "forAdmin":true    /false,
+    "forAdmin":true/false,
     "nameColor":"Hexcode for color",
-    "subscriberOnly":true    /false,
-    "followerOnly":true    /false
+    "subscriberOnly":true/false,
+    "followerOnly":true/false
   }
 }
 ```
