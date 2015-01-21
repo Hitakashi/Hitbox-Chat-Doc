@@ -1,1 +1,1 @@
-# Hitbox-API-Doc
+# Hitbox-Chat-Doc
