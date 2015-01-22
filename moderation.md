@@ -2,7 +2,7 @@
 
 The modeator/admin commands can of course only be used by moderators and/or admins.
 
-#### Timeout a user (user)
+#### Timeout a user (User)
 
 To kick a user (ban it temporarily for a specified amount of time) you must be at least a moderator and send the following message to the server:
 
