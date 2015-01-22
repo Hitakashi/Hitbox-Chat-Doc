@@ -128,7 +128,7 @@ To set a slow mode in chat (So that every normal user can only post one message 
   "method":"slowMode",
   "params":{
     "channel":"CHANNEL",
-    "time":"Slow mode in seconds",
+    "time":10,
     OR
     "subscriber":true
   }
