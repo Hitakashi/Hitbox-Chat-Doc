@@ -135,7 +135,7 @@ To set a slow mode in chat (So that every normal user can only post one message 
 }
 ```
 
-You can (currently) only have slow mode or subscriber mode active at the same time. You can send the subscriber flag as false, but not true while time is higher than 0.
+You can (currently) only have slow mode or subscriber mode active at the same time. You can send the subscriber flag as false, but not true while time is greater than 0.
 
 To disable slow mode send time as 0. To disable subscriber mode toggle the flag.
 
