@@ -50,7 +50,7 @@ The ban will be announced in the chat via an infoMsg with `action` set to `ban`,
 
 This is a list with all the banned user in the chat. When there are banned users you will also get this list when you call the user list.
 
-#### IP-Ban a user
+#### IP-Ban a user (Broadcaster)
 
 To IP-Ban a user you must be an admin in the channel. You send the same command for banning but add a flag:
 
