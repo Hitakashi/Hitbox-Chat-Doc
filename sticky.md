@@ -35,4 +35,4 @@ The chat server will send the following message to the channel, this message wil
 }
 ```
 
-To remove a sticky message just send the same motdMsg command with an empty text field.
+To remove a sticky message just send the same motdMsg command with an empty text field. Users will also recieve another motdMsg with empty text.
