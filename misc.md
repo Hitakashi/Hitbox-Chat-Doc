@@ -62,8 +62,11 @@ Once you have those values you can initiate a WebSocket connection to `wsUrl` an
 ```
 
 `channel` = `wsChannel` 
+
 `name` = `userName`
+
 `token` = `wsToken`
+
 `uuid` = `uuid`
 
 You will then recieve the following message every time the viewer counts are changed.
