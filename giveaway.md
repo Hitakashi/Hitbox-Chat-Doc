@@ -42,10 +42,12 @@ The server will then send a message like this to the channel:
     "prize":"Description of Prize",
     "choices":[
       {
-        "text":"Answer 1"
+        "text":"Answer 1",
+        "count":0
       },
       {
-        "text":"Answer 2"
+        "text":"Answer 2",
+        "count":0
       }
     ],
     "start_time":"2014­12­10T14:53:33.142Z",
@@ -57,6 +59,8 @@ The server will then send a message like this to the channel:
   }
 }
 ```
+
+Counts will be removed if you aren't an admin.
 
 #### Pause a giveaway (Admin)
 
@@ -72,6 +76,19 @@ To pause a giveaway send the following message:
 ```
 
 The server will then send a raffleMsg with the status set to "paused".
+
+#### Resume a giveaway (Admin)
+
+You can also resume a giveaway if it's still in a paused state.
+
+```json
+{
+  "method":"startRaffle",
+  "params":{
+    "channel":"CHANNEL"
+  }
+}
+```
 
 #### Vote in a giveaway (Anon)
 
@@ -92,7 +109,7 @@ The server will periodically send a raffleMsg to admins to update the results.
 
 #### Pick a winner (Admin)
 
-To pick a winner you must pause the poll first and then send the following message:
+To pick a winner you must pause the giveawayp first and then send the following message:
 
 ```json
 {
@@ -147,3 +164,5 @@ To end a giveaway send this message to the server:
   }
 }
 ```
+
+The server will send a raffleMsg to the channel with the status set to "delete".
