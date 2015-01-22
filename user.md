@@ -118,6 +118,21 @@ The chat server sends sytem messages, for example adding or removing a moderator
 }
 ```
 
+There is also a special infoMsg for new subscribers that pops up in the website UI (like a poll) 
+
+```json
+{
+  "method":"infoMsg",
+  "params":{
+    "text":"Test-Account just subscribed to this channel",
+    "channel":"CHANNEL",
+    "subscriber":"Test-Account",
+    "type":"subChannel",
+    "time":EpochTimeStamp
+  }
+}
+```
+
 
 #### User List 
 
