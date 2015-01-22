@@ -100,7 +100,7 @@ If your message was rejected by the server due to slow mode or subscriber only, 
 }
 ```
 
-`buffer` and `buffersent` are only added when it's a backlog message.
+`buffer` and `buffersent` are only added when it's a backlog message. The owner will not have isSubscriber but still has access to subscriber emotes.
 
 #### System Messages
 
