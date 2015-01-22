@@ -92,7 +92,7 @@ If your message was successfully sent to the channel the chat server sends it ba
     "isStaff":true/false,
     "isCommunity":true/false,
     "media":true/false,
-    "image":"Path to channel owner/subscriber image"
+    "image":"Path to channel owner/subscriber image",
     "buffer":true,
     "buffersent":true
   }
