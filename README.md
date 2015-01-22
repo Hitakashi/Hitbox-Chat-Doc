@@ -1,5 +1,7 @@
 # Hitbox-Chat-Doc
 
+*Disclaimer* - I am NOT a hitbox staff member nor a member of their ambassador team. I'm just a user. I did get some information from staff, but I was not given any special powers, perks, etc. Everything documented can be performed by anyone with the correct permissions in chat.
+
 Most headers will contain the lowest role that can access or see the command.
 
 | Role | Description |
