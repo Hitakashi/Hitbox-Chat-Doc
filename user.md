@@ -186,3 +186,5 @@ As a response you should get something like this:
   }
 }
 ```
+
+If you query a banned user,  `role` is set as `banned`, the is flags are removed and there's an added "banned":true value 
