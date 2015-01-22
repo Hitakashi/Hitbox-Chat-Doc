@@ -84,7 +84,7 @@ If your message was successfully sent to the channel the chat server sends it ba
     "name":"USERNAME",
     "nameColor":"Hexcode for color, or don't send it.",
     "text":"Text of your message",
-    "time":"Epoch Timestamp",
+    "time":EpochTimestamp,
     "role":"role in chat",
     "isFollower":true/false,
     "isSubscriber":true/false,
@@ -93,9 +93,13 @@ If your message was successfully sent to the channel the chat server sends it ba
     "isCommunity":true/false,
     "media":true/false,
     "image":"Path to channel owner/subscriber image"
+    "buffer":true,
+    "buffersent":true
   }
 }
 ```
+
+`buffer` and `buffersent` are only added when it's a backlog message.
 
 #### System Messages
 
