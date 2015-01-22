@@ -77,6 +77,21 @@ To pause a giveaway send the following message:
 
 The server will then send a raffleMsg with the status set to "paused".
 
+#### End a giveaway (Admin)
+
+To end a giveaway send the following message:
+
+```json
+{
+  "method":"endRaffle",
+  "params":{
+    "channel":"CHANNEL"
+  }
+}
+```
+
+The server will then send a raffleMsg with the status set to "ended". The giveaway must be in this state to roll a winner.
+
 #### Resume a giveaway (Admin)
 
 You can also resume a giveaway if it's still in a paused state.
@@ -109,7 +124,7 @@ The server will periodically send a raffleMsg to admins to update the results.
 
 #### Pick a winner (Admin)
 
-To pick a winner you must pause the giveawayp first and then send the following message:
+To pick a winner you must end the giveaway first and then send the following message:
 
 ```json
 {
@@ -121,7 +136,7 @@ To pick a winner you must pause the giveawayp first and then send the following 
 }
 ```
 
-The server will respond with two times the following message, one for all users without the email (and forAdmin set to false) and one for admins (with forAdmin set to true) with the email:
+The server will respond with two times the following message, one for all users without the email (with forAdmin set to false) and one for admins (with forAdmin set to true) with the email:
 
 ```json
 {
