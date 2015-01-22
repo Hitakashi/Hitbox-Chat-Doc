@@ -73,8 +73,9 @@ To send a message to the chat use this format. `text` is limited to about 255-30
   }
 }
 ```
-
 If your message was successfully sent to the channel the chat server sends it back to you like this (And every other chat message)
+
+If your message was rejected by the server due to slow mode or subscriber only, you will get back an infoMsg.
 
 ```json
 {
@@ -107,12 +108,12 @@ The chat server sends sytem messages, for example adding or removing a moderator
 
 ```json
 {
-  "method":"chatMsg",
+  "method":"infoMsg",
   "params":{
     "text":"Text of your message",
     "channel":"CHANNEL",
     "timestamp":EpochTimeStamp,
-    "action":"Optional, Example kickUser"
+    "action":"Optional, Example ban, kickUser, isAdmin"
   }
 }
 ```
