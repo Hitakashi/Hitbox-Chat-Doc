@@ -60,7 +60,7 @@ There will be no response but the connection will be closed from the server.
 
 #### Chat Messages
 
-To send a message to the chat use this format:
+To send a message to the chat use this format. `text` is limited to about 255-300 characters:
 
 ```json
 {
