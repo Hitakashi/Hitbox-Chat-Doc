@@ -1,6 +1,11 @@
 # Miscellaneous Commands
 
-#### Stream Reesource Update
+**Table of Contents**
+
+- [Stream Resource Update](#stream-resource-update)
+- [Viewer Count Server](#viewer-count-server)
+
+#### Stream Resource Update
 
 This message is sent whenever the stream title or game is updated.
 
