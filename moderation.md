@@ -1,5 +1,15 @@
 # Moderation Commands
 
+**Table of Contents** 
+
+- [Timeout a user (User)](#timeout-a-user-user)
+- [Ban a user (User)](#ban-a-user-user)
+- [IP-Ban a user (Admin)](#ip-ban-a-user-admin)
+- [Un-Ban a user (User)](#un-ban-a-user-user)
+- [Add a moderator (Broadcaster)](#add-a-moderator-broadcaster)
+- [Remove a moderator (Broadcaster)](#remove-a-moderator-broadcaster)
+- [Slow Mode/Subscriber Only Mode (User)](#slow-modesubscriber-only-mode-user)
+
 The modeator/admin commands can of course only be used by moderators and/or admins.
 
 #### Timeout a user (User)
