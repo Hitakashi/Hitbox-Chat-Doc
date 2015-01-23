@@ -1,5 +1,14 @@
 # General Commands
 
+**Table of Contents** 
+
+- [Login Command](#login-command)
+- [Logout Command](#logout-command)
+- [Chat Messages](#chat-messages)
+- [System Messages](#system-messages)
+- [User List](#user-list)
+- [User Info](#user-info)
+
 
 #### Login Command
 
