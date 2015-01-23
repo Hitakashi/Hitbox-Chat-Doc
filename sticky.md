@@ -1,5 +1,9 @@
 # Sticky (MOTD) Commands
 
+**Table of Contents** 
+
+- [Create Sticky (Admin)](#create-sticky-admin)
+
 The sticky message is basically a MOTD (Message of the day) which shows up at the top of the Website UI.
 
 #### Create Sticky (Admin)
