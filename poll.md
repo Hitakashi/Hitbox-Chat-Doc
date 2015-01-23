@@ -1,5 +1,13 @@
 # Poll Commands
 
+**Table of Contents** 
+
+- [Start Poll (Admin)](#start-poll-admin)
+- [Poll Info (Guest)](#poll-info-guest)
+- [Poll Vote (Anon)](#poll-vote-anon)
+- [Pause/Restart Poll (Admin)](#pauserestart-poll-admin)
+- [End Poll (Admin)](#end-poll-admin)
+
 A poll can only be created by a chat admin. It's possible to create a poll and giveaway but the website UI will only show the latest.
 
 #### Start Poll (Admin)
