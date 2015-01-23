@@ -1,6 +1,6 @@
 # Raffle Commands
 
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents** 
 
 - [Raffle Commands](#raffle-commands)
 	- [Create a giveaway (Admin)](#Create-a-giveaway-Admin)
