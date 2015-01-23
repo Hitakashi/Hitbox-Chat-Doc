@@ -3,14 +3,14 @@
 **Table of Contents** 
 
 - [Raffle Commands](#raffle-commands)
-	- [Create a giveaway (Admin)](#Create-a-giveaway-Admin)
-	- [Pause a giveaway (Admin)](#pause-a-giveaway-admin)
-	- [End a giveaway (Admin)](#end-a-giveaway-admin)
-	- [Resume a giveaway (Admin)](#resume-a-giveaway-admin)
-	- [Vote in a giveaway (Anon)](#vote-in-a-giveaway-anon)
-	- [Pick a winner (Admin)](#pick-a-winner-admin)
-	- [Hide a giveaway (Admin)](#hide-a-giveaway-admin)
-	- [End a giveaway (Admin)](#end-a-giveaway-admin)
+- [Create a giveaway (Admin)](#Create-a-giveaway-Admin)
+- [Pause a giveaway (Admin)](#pause-a-giveaway-admin)
+- [End a giveaway (Admin)](#end-a-giveaway-admin)
+- [Resume a giveaway (Admin)](#resume-a-giveaway-admin)
+- [Vote in a giveaway (Anon)](#vote-in-a-giveaway-anon)
+- [Pick a winner (Admin)](#pick-a-winner-admin)
+- [Hide a giveaway (Admin)](#hide-a-giveaway-admin)
+- [End a giveaway (Admin)](#end-a-giveaway-admin)
 
 A giveaway is like a [poll](./poll.md) but you can pick a winner and have to announce a prize.
 
