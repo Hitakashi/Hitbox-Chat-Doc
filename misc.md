@@ -40,7 +40,9 @@ This message is sent whenever the stream title or game is updated.
 
 This is a seperate server from from the chat server which returns infoMsg with viewer counts.
 
-To get started you need to initiate a conection to the [Player Config API](https://github.com/Hitakashi/Hitbox-API/blob/master/media/player_config.md#get-playerconfigmedia_typeuser_id) and grab the values `wsUrl`, `wsChannel`, `wsToken`, `userName` and `uuid` from plugins->pingback object.
+To get started you need to initiate a conection to the [Player Config API](https://github.com/Hitakashi/Hitbox-API/blob/master/media/player_config.md#get-playerconfigmedia_typeuser_id) and grab the values `wsUrl`, `wsChannel`, `wsToken`, `userName` and `uuid` from plugins->pingback object*.
+
+[*] It looks like the only required field in the joinChannel message is the channel. So you can either fill the whole message out or just send one with the channel filled out.
 
 Once you have those values you can initiate a WebSocket connection to `wsUrl` and send the following message:
 
