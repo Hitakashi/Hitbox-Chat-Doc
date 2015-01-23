@@ -2,7 +2,6 @@
 
 **Table of Contents** 
 
-- [Raffle Commands](#raffle-commands)
 - [Create a giveaway (Admin)](#create-a-giveaway-admin)
 - [Pause a giveaway (Admin)](#pause-a-giveaway-admin)
 - [End a giveaway (Admin)](#end-a-giveaway-admin)
