@@ -142,6 +142,18 @@ There is also a special infoMsg for new subscribers that pops up in the website 
 }
 ```
 
+There is also a special chatLog for broadcasters that is sent on privileged commands which includes who did what to who. 
+
+```json
+{
+  "method":"chatLog",
+  "params":{
+    "text":"<user>Hitakashi</user> banned <user>Claptrap</user>",
+    "timestamp":1422326251,
+    "channel":"hitakashi"
+  }
+}
+```
 
 #### User List 
 
