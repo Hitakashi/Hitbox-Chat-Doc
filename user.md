@@ -149,8 +149,8 @@ There is also a special chatLog for broadcasters that is sent on privileged comm
   "method":"chatLog",
   "params":{
     "text":"<user>Hitakashi</user> banned <user>Claptrap</user>",
-    "timestamp":1422326251,
-    "channel":"hitakashi"
+    "timestamp":EpochTimeStamp,
+    "channel":"CHANNEL"
   }
 }
 ```
