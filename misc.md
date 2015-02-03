@@ -41,6 +41,28 @@ This message is sent whenever the stream title or game is updated.
 }
 ```
 
+This message is sent whenever a host update has occured.
+
+```json
+{
+  "name":"message",
+  "args":[
+    {
+      "method":"serverMsg",
+      "params":{
+        "channel":"hitakashi",
+        "text":{
+          "media":null
+        },
+        "type":"hostModeUpdate",
+        "mode":"on",
+        "time":1422955717
+      }
+    }
+  ]
+}
+```
+
 #### Viewer Count Server
 
 This is a seperate server from from the chat server which returns infoMsg with viewer counts.
