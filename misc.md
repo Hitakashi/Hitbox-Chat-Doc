@@ -42,7 +42,7 @@ This message is sent whenever the stream title or game is updated.
 ```
 
 This message is sent whenever a host update has occured.
-<a name="hostModeUpdate" class="anchor"><span class="octicon octicon-link"></span>
+<a name="hostmodeupdate" class="anchor"><span class="octicon octicon-link"></span>
 ```json
 {
   "name":"message",
