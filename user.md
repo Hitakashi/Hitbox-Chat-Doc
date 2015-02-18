@@ -177,7 +177,7 @@ You will then get the following list from the server:
     "channel":"CHANNEL",
     "data":{
       "Guests":null,
-      "admin":["Broadcaster","Staff-Member","Community-Member"],
+      "admin":["Broadcaster","Staff-Member","Community-Member", "Editor"],
       "user":["Moderator"],
       "anon":["test-account"],
       "isFollower":["Moderator","test-account","Staff-Member"],
