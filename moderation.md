@@ -140,10 +140,12 @@ To set a slow mode in chat (So that every normal user can only post one message 
     "channel":"CHANNEL",
     "time":10,
     OR
-    "subscriber":true
+    "subscriber":true,
+    "rate":0
   }
 }
 ```
+Only send rate when your setting sub only mode. It should also only be 0 for now.
 
 You can (currently) only have slow mode or subscriber mode active at the same time. You can send the subscriber flag as false, but not true while time is greater than 0.
 
