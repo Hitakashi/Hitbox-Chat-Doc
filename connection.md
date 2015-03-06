@@ -79,7 +79,7 @@ Every command sent and revied from the server follows the following general form
 To keep the method examples short I will post the above across the doc, but you will most likely need to encapsulate the above with the following:
 
 ```json
-{
+5::{
   "name":"message",
   "args":[
     {
