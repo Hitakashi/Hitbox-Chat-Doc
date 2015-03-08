@@ -1,5 +1,7 @@
 # Hitbox-Chat-Doc
 
+*README* - Please read the [connection](connection.md) doc (Notably the Message Format) as you most likely need to encapsulate the WebSocket messages.
+
 *Disclaimer* - I am NOT a hitbox staff member nor a member of their ambassador team. I'm just a user. I did get some information from staff, but I was not given any special powers, perks, etc in chat. Everything documented can be performed by anyone with the correct permissions in chat.
 
 hitbox Web API: https://github.com/Hitakashi/Hitbox-API
