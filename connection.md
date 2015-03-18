@@ -85,6 +85,7 @@ To keep the method examples short I will post the above across the doc, but you 
     {
       "method":"COMMAND",
       ...
+    }
   ]
 }
 ```
