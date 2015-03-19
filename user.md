@@ -192,7 +192,7 @@ There is also a special infoMsg for new subscribers that pops up in the website 
 }
 ```
 
-There is also a special chatLog for broadcasters that is sent on privileged commands which includes who did what to who. 
+There is also a special chatLog for broadcasters and editors that is sent on multiple actions. (Subscriptions, Followers, Bans, etc)
 
 ```json
 {
