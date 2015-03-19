@@ -5,6 +5,7 @@
 - [Login Command](#login-command)
 - [Logout Command](#logout-command)
 - [Chat Messages](#chat-messages)
+- [Direct Messages](#direct-messages)
 - [System Messages](#system-messages)
 - [User List](#user-list)
 - [User Info](#user-info)
@@ -110,6 +111,55 @@ If your message was rejected by the server due to slow mode or subscriber only, 
 ```
 
 `buffer` and `buffersent` are only added when it's a backlog message. The owner will not have isSubscriber but still has access to subscriber emotes.
+
+
+### Direct Messages
+
+To send a direct message to another hitbox user you need to send the following message:
+
+```json
+{
+   "method":"directMsg",
+   "params":{
+      "channel":"CHANNEL",
+      "from":"USERNAME",
+      "to":"RECIPENT",
+      "nameColor":"HEXCOLOR",
+      "text":"This is a direct message."
+   }
+}
+```
+
+You will then get back a confirmation that the message was sent. You can also get a infoMsg back that you are sending too fast.
+
+```json
+{
+   "method":"infoMsg",
+   "params":{
+      "text":"Direct message to RECIPENT sent.",
+      "channel":"CHANNEL",
+      "timestamp":1426785188,
+      "action":"directmsg"
+   }
+}
+```
+
+The recipent will then recieve the following message:
+
+```json
+{
+   "method":"directMsg",
+   "params":{
+      "from":"SENDER",
+      "nameColor":"HEXCOLOR",
+      "text":"This is a direct message.",
+      "time":1426785188,
+      "isStaff":false,
+      "isCommunity":false,
+      "type":"info"
+   }
+}
+```
 
 #### System Messages
 
