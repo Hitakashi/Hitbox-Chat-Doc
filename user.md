@@ -290,7 +290,7 @@ To get list of media (Currently only images) send this command:
          "params":{
             "channel":"test-account",
             "type":"image",
-            "name":"Hitakashi",
+            "name":"test-account",
             "token":"SuperSecret"
          }
       }
