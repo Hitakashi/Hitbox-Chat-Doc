@@ -9,6 +9,7 @@
 - [System Messages](#system-messages)
 - [User List](#user-list)
 - [User Info](#user-info)
+- [Media Log](#media-log)
 
 
 #### Login Command
