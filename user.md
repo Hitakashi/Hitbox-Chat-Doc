@@ -275,3 +275,55 @@ As a response you should get something like this:
 ```
 
 If you query a banned user,  `role` is set as `banned`, the is flags are removed and there's an added "banned":true value 
+
+#### Media Log
+
+To get list of media (Currently only images) send this command:
+
+```json
+{
+   "name":"message",
+   "args":[
+      {
+         "method":"mediaLog",
+         "params":{
+            "channel":"test-account",
+            "type":"image",
+            "name":"Hitakashi",
+            "token":"SuperSecret"
+         }
+      }
+   ]
+}
+```
+
+As a response you should get something like this:
+
+```json
+{
+   "name":"message",
+   "args":[
+      {
+         "method":"mediaLog",
+         "params":{
+            "channel":"test-account",
+            "type":"image",
+            "data":[
+               {
+                  "channel":"test-account",
+                  "name":"test-account",
+                  "nameColor":"53BE34",
+                  "time":1431023931,
+                  "url":"https://www.google.com/images/srpr/logo11w.png",
+                  "size":{
+                     "x":538,
+                     "y":190
+                  },
+                  "proxyUrl":"http://edge.sf.ak.hitbox.tv/chatimage?u=https%3A%2F%2Fwww.google.com%2Fimages%2Fsrpr%2Flogo11w.png"
+               }
+            ]
+         }
+      }
+   ]
+}
+```
