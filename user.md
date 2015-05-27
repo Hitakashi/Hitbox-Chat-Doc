@@ -44,7 +44,7 @@ The client must wait until it gets the login confirmation which looks like this:
 }
 ```
 
-The `name` value is the name in the chat. You can customized the casing however you want. When it is "UnknownSoldier" you are logged in as a guest. When you don't get a response in 10 seconds your credentials are either wrong or the chat server is not responding, so disconnect the chat server and try another one or check if your credientials are ok. You will never get a error message from the chat server.
+The `name` value is the name in the chat. You can customized the casing however you want. When it is "UnknownSoldier" you are logged in as a guest. When you don't get a response in 10 seconds your credentials are either wrong or the chat server is not responding, so disconnect the chat server and try another one or check if your credentials are ok. If you supplied a name and token but your `role` is still "guest", your credentials are incorrect, so you should disconnect the server and check your credentials. You will never get a error message from the chat server.
 
 The roles can be found in the (README)[./README.md]
 
@@ -145,7 +145,7 @@ You will then get back a confirmation that the message was sent. You can also ge
 }
 ```
 
-The recipent will then recieve the following message:
+The recipient will then receive the following message:
 
 ```json
 {
@@ -164,7 +164,7 @@ The recipent will then recieve the following message:
 
 #### System Messages
 
-The chat server sends sytem messages, for example adding or removing a moderator, that have the following format:
+The chat server sends system messages, for example adding or removing a moderator, that have the following format:
 
 ```json
 {
