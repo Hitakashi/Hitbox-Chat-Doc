@@ -31,7 +31,7 @@ To start a poll you must be an admin and send the following command.
     ],
     "subscriberOnly":true/false,
     "followerOnly":true/false,
-    "start_time":"2014­12­10T14:53:33.142Z",
+    "start_time":"2015-07-01T21:27:14.625Z",
     "nameColor":"000000"
   }
 }
