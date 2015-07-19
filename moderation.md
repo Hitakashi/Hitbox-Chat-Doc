@@ -10,7 +10,7 @@
 - [Remove a moderator (Broadcaster)](#remove-a-moderator-broadcaster)
 - [Slow Mode/Subscriber Only Mode (User)](#slow-modesubscriber-only-mode-user)
 
-The modeator/admin commands can of course only be used by moderators and/or admins.
+The moderator/admin commands can of course only be used by moderators and/or admins.
 
 #### Timeout a user (User)
 
