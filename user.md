@@ -21,7 +21,7 @@ To login to the hitbox chat system you need to send the following message:
   "method":"joinChannel",
   "params":{
     "channel":"CHANNEL",
-    "name":"USERNAME or don't send this",
+    "name":"USERNAME or UnknownSoldier",
     "token":"Users Auth Token or don't send this"
   }
 }
