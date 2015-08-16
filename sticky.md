@@ -10,32 +10,42 @@ The sticky message is basically a MOTD (Message of the day) which shows up at th
 
 To set the sticky message you must be an admin and send this message to the server:
 
-```json
-{
-  "method":"motdMsg",
-  "params":{
-    "channel":"CHANNEL",
-    "name":"USERNAME",
-    "nameColor":"hexcode for color",
-    "text":"Text of sticky message",
-    "time":"2014­12­10T14:53:33.142Z"
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"motdMsg",
+            "params":{
+                "channel":"CHANNEL",
+                "name":"USERNAME",
+                "nameColor":"hexcode for color",
+                "text":"Text of sticky message",
+                "time":"2015-08-16T08:36:45.529Z"
+            }
+        }
+    ]
 }
 ```
 
 The chat server will send the following message to the channel, this message will be sent to each user on login.
 
-```json
-{
-  "method":"motdMsg",
-  "params":{
-    "channel":"CHANNEL",
-    "name":"USERNAME",
-    "nameColor":"hexcode for color",
-    "text":"Text of sticky message",
-    "time":"Timestamp in Epoch",
-    "image":"path to channel owner image"
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"motdMsg",
+            "params":{
+                "channel":"CHANNEL",
+                "name":"USERNAME",
+                "nameColor":"hexcode for color",
+                "text":"Text of sticky message",
+                "time":"Timestamp in Epoch",
+                "image":"path to channel owner image"
+            }
+        }
+    ]
 }
 ```
 

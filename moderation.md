@@ -16,45 +16,61 @@ The modeator/admin commands can of course only be used by moderators and/or admi
 
 To kick a user (ban it temporarily for a specified amount of time) you must be at least a moderator and send the following message to the server:
 
-```json
-{
-  "method":"kickUser",
-  "params":{
-    "channel":"CHANNEL",
-    "name":"Name of user to timeout",
-    "token":"Token of moderator",
-    "timeout":10
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"kickUser",
+            "params":{
+                "channel":"CHANNEL",
+                "name":"Name of user to timeout",
+                "token":"Token of moderator",
+                "timeout":10
+            }
+        }
+    ]
 }
 ```
 
-The timeout is in second. If everything is correct the chat server sends a infoMsg with `action` set to `kickUser`
+The timeout is in seconds. If everything is correct the chat server sends a infoMsg with `action` set to `kickUser`
 
 #### Ban a user (User)
 
 To ban a user so that he/she is unable to write in a chat you must send the following message to the server:
 
-```json
-{
-  "method":"banUser",
-  "params":{
-    "channel":"CHANNEL",
-    "name":"Name of user to ban"
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"banUser",
+            "params":{
+                "channel":"CHANNEL",
+                "name":"Name of user to ban"
+            }
+        }
+    ]
 }
 ```
 
-The ban will be announced in the chat via an infoMsg with `action` set to `ban`, it will also send a ban list:
+The ban will be announced in the chat via an infoMsg with `action` set to `ban`, it will also send a [userList](./user.md#user-list) and ban list:
 
-```json
-{
-  "method":"banList",
-  "params":{
-    "channel":"CHANNEL",
-    "data":[
-      "test-account", "test-account-2"
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"banList",
+            "params":{
+                "channel":"CHANNEL",
+                "data":[
+                    "test-account",
+                    "test-account-2"
+                ]
+            }
+        }
     ]
-  }
 }
 ```
 
@@ -64,15 +80,20 @@ This is a list with all the banned user in the chat. When there are banned users
 
 To IP-Ban a user you must be an admin in the channel. You send the same command for banning but add a flag:
 
-```json
-{
-  "method":"banUser",
-  "params":{
-    "channel":"CHANNEL",
-    "name":"Name of user to ban",
-    "token":"Token of admin",
-    "banIP":true
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"banUser",
+            "params":{
+                "channel":"CHANNEL",
+                "name":"Name of user to ban",
+                "token":"Token of admin",
+                "banIP":true
+            }
+        }
+    ]
 }
 ```
 
@@ -82,14 +103,19 @@ Be careful with IP-Bans, You don't know how many users you can block with it. (U
 
 To un-ban a user you must be moderator and send the following message to the server:
 
-```json
-{
-  "method":"unbanUser",
-  "params":{
-    "channel":"CHANNEL",
-    "name":"Name of user to un-ban",
-    "token":"Token of moderator"
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"unbanUser",
+            "params":{
+                "channel":"CHANNEL",
+                "name":"Name of user to un-ban",
+                "token":"Token of moderator"
+            }
+        }
+    ]
 }
 ```
 
@@ -99,14 +125,19 @@ To make a user a moderator you must be the broadcaster (No, Editors don't count)
 
 * Currently editors can create temporary mods, but the user loses the mod on a refresh.
 
-```json
-{
-  "method":"makeMod",
-  "params":{
-    "channel":"CHANNEL",
-    "name":"Name of user to mod",
-    "token":"Token of broadcaster"
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"makeMod",
+            "params":{
+                "channel":"CHANNEL",
+                "name":"Name of user to mod",
+                "token":"Token of broadcaster"
+            }
+        }
+    ]
 }
 ```
 
@@ -116,14 +147,19 @@ The result will be announced in a infoMsg with `action` set as `isAdmin`.
 
 To remove a moderator you must be the broadcaster (No, Editors don't count) and send the following message to the server:
 
-```json
-{
-  "method":"removeMod",
-  "params":{
-    "channel":"CHANNEL",
-    "name":"Name of user to unmod",
-    "token":"Token of broadcaster"
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"removeMod",
+            "params":{
+                "channel":"CHANNEL",
+                "name":"Name of user to unmod",
+                "token":"Token of broadcaster"
+            }
+        }
+    ]
 }
 ```
 
@@ -133,16 +169,21 @@ The result will be announced in a infoMsg with `action` set as `isAdmin`.
 
 To set a slow mode in chat (So that every normal user can only post one message every X seconds or only subscribed users can chat) you must be at least moderator and send the following message to the server:
 
-```json
-{
-  "method":"slowMode",
-  "params":{
-    "channel":"CHANNEL",
-    "time":10,
-    OR
-    "subscriber":true,
-    "rate":0
-  }
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"slowMode",
+            "params":{
+                "channel":"CHANNEL",
+                "time":10,
+                OR
+                "subscriber":true,
+                "rate":0
+            }
+        }
+    ]
 }
 ```
 Only send rate when your setting sub only mode. It should also only be 0 for now.

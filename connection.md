@@ -6,14 +6,13 @@
 - [Websocket ID (Step 2)](#websocket-id-step-2)
 - [Server Connection (Step 3)](#server-connection-step-3)
 - [Limits](#limits)
-- [Message Format](#message-format)
 - [Post-Server Connection](#post-server-connection)
 
 #### Pre-Server Connection (Step 1)
 
 To start connecting to hitbox chat you should first initiate a HTTP GET request to http://api.hitbox.tv/chat/servers?redis=true the result should be the following Json Object 
 
-```json
+```javascript
 [
   {
     "server_ip":"ec2-54-91-252-98.compute-1.amazonaws.com"
@@ -56,39 +55,6 @@ If you cannot connect after 8 seconds you should grab another server from Step 1
 #### Limits
 
 There are limits on how many connections can be made from one IP/one user within a time frame. The same applies to chat messages and all other functions. More information will be provided in the loginMsg doc.
-
-
-#### Message Format
-
-Every command sent and revied from the server follows the following general format. 
-
-```json
-{
-  "method":"COMMAND",
-  "params":{
-    "channel":"lowercase_Channel",
-    "name":"Username",
-    "token":"authToken"
-    .
-    .
-    Additional Commands
-  }
-}
-```
-
-To keep the method examples short I will post the above across the doc, but you will most likely need to encapsulate the above with the following:
-
-```json
-5:::{
-  "name":"message",
-  "args":[
-    {
-      "method":"COMMAND",
-      ...
-    }
-  ]
-}
-```
 
 #### Post-Server Connection
 
