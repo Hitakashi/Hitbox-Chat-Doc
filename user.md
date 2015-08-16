@@ -16,6 +16,7 @@
 
 To login to the hitbox chat system you need to send the following message:
 
+<<<<<<< HEAD
 ```javascript
 5:::{
     "name":"message",
