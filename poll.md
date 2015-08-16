@@ -14,7 +14,6 @@ A poll can only be created by a chat admin. It's possible to create a poll and g
 
 To start a poll you must be an admin and send the following command.
 
-<<<<<<< HEAD
 ```javascript
 5:::{
     "name":"message",
