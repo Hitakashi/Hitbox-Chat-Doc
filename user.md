@@ -312,7 +312,7 @@ You will then get the following list from the server:
 
 The server automatically sends a userList when a chat admin leaves a channel.
 
-This is the user list for this channel, divided in the different roles and extra flags. Staff members are always listed in `admin`, `isStaff` and `isSubscriber`. Ambassadors are listed in `admin` and `isCommunity`. `Guests` contain an integer of the number of unregistered viewers.
+This is the user list for this channel, divided in the different roles and extra flags. Staff members are always listed in `admin`, `isStaff` and `isSubscriber`. Ambassadors are listed in `admin` and `isCommunity`. `Guests` contain an integer of the number of unregistered chatters.
 
 #### User Info
 
