@@ -249,4 +249,18 @@ To end a giveaway send this message to the server:
 }
 ```
 
-After you send a cleanupRaffle, the server will broadcast a [raffleMsg](#Giveaway-Info-Guest) to all anon and above users with JUST the `status` value set as `deleted`.
+After you send a cleanupRaffle, the server will broadcast the following to all users.
+
+```javascript
+5:::{
+    "name":"message",
+    "args":[
+        {
+            "method":"raffleMsg",
+            "params":{
+                "status":"delete"
+            }
+        }
+    ]
+}
+```
