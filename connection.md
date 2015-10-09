@@ -36,6 +36,8 @@ You can pick whatever server from the response, but you should never save the ad
 
 At this point you should also get your [auth token](https://github.com/Hitakashi/Hitbox-API/blob/master/auth/login.md#post-authtoken) for the user unless you are planning to login as a guest. 
 
+If you're using a Socket.IO v0.9.17, The following steps shouldn't be necessary as it's handled by the library.
+
 #### Websocket ID (Step 2)
 
 Once you get the server address from above, you should append `/socket.io/1/` to the address. After that you need to send a HTTP GET request to that address, for example http://ec2-54-87-229-245.compute-1.amazonaws.com/socket.io/1/ which will return the following text.
