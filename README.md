@@ -1,5 +1,5 @@
 # Hitbox-Chat-Doc
-[![Join the chat at https://gitter.im/Hitakashi/Hitbox-Chat-Doc](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Hitakashi/Hitbox-Chat-Doc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/Hitakashi/Hitbox-API](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Hitakashi/Hitbox-API?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 *README* - Please read the [connection](connection.md) doc (Notably the Message Format) as you most likely need to encapsulate the WebSocket messages.
 
