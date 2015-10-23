@@ -369,18 +369,13 @@ To get list of media (Currently only images) send this command:
     "name":"message",
     "args":[
         {
-            "name":"message",
-            "args":[
-                {
-                    "method":"mediaLog",
-                    "params":{
-                        "channel":"test-account",
-                        "type":"image",
-                        "name":"test-account",
-                        "token":"SuperSecret"
-                    }
-                }
-            ]
+            "method":"mediaLog",
+            "params":{
+                "channel":"CHANNEL",
+                "type":"image",
+                "name":"USERNAME",
+                "token":"SuperSecret"
+            }
         }
     ]
 }
@@ -389,7 +384,7 @@ To get list of media (Currently only images) send this command:
 As a response you should get something like this:
 
 ```javascript
-{
+5:::{
     "name":"message",
     "args":[
         {
@@ -402,13 +397,13 @@ As a response you should get something like this:
                         "channel":"CHANNEL",
                         "name":"USERNAME",
                         "nameColor":"HEXCOLOR",
-                        "time":EPOCHTIMESTAMP,
-                        "url":"https://www.google.com/logos/doodles/2015/special-olympics-world-games-2015-5710263202349056-hp.gif",
+                        "time":1444420588,
+                        "url":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/B_menziesii_gnangarra_19.jpg/1280px-B_menziesii_gnangarra_19.jpg",
                         "size":{
-                            "x":600,
-                            "y":151
+                            "x":1280,
+                            "y":960
                         },
-                        "proxyUrl":"http://edge.sf.ak.hitbox.tv/chatimage?u=https%3A%2F%2Fwww.google.com%2Flogos%2Fdoodles%2F2015%2Fspecial-olympics-world-games-2015-5710263202349056-hp.gif"
+                        "proxyUrl":"http://chatimages.hitbox.tv/beb3f3db9673ee63d8ce4256fb2ba36b"
                     }
                 ]
             }
