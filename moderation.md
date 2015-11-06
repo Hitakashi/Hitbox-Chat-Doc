@@ -26,7 +26,7 @@ To kick a user (ban it temporarily for a specified amount of time) you must be a
                 "channel":"CHANNEL",
                 "name":"Name of user to timeout",
                 "token":"Token of moderator",
-                "timeout":10
+                "timeout":"10"
             }
         }
     ]
