@@ -234,7 +234,7 @@ The name field is only sent on ban.
 
 There is also a special infoMsg for new subscribers that pops up in the website UI (like a poll) 
 
-To change the 'lang' key to one on /translate API, You should change \'.\' to \'_\' and \'_\' to \'-\'.
+To change the 'lang' key to one on /translate API, You should change . to _ and _ to -.
 
 ```javascript
 5:::{
