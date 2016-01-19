@@ -1,9 +1,10 @@
 # Hitbox-Chat-Doc
-[![Join the chat at https://gitter.im/Hitakashi/Hitbox-API](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Hitakashi/Hitbox-API?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+### DEPRECATED
+
+I now work on the [official documentation](http://developers.hitbox.tv/), so please use that. This document is deprecated.
 
 *README* - Please read the [connection](connection.md) doc (Notably the Message Format) as you most likely need to encapsulate the WebSocket messages.
-
-*Disclaimer* - I am NOT a hitbox staff member nor a member of their ambassador team. I'm just a user. I did get some information from staff, but I was not given any special powers, perks, etc in chat. Everything documented can be performed by anyone with the correct permissions in chat.
 
 hitbox Web API: https://github.com/Hitakashi/Hitbox-API
 
