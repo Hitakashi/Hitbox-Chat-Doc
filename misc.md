@@ -76,7 +76,7 @@ When you turn host mode off, It sends the same message with the media object as 
 
 This is a seperate server from from the chat server which returns infoMsg with viewer counts.
 
-To get started you need to initiate a conection to the [Player Server API](http://www.hitbox.tv/api/player/server) and grab the values `wsUrl`, `wsChannel`, `wsToken`, `userName` and `uuid` from plugins->pingback object*.
+To get started you need to get one server from the [Player Server API](http://www.hitbox.tv/api/player/server). Then get `wsUrl`, `wsChannel`, `wsToken`, `userName` and `uuid` from plugins->pingback object* on the [Live Player API](https://github.com/Hitakashi/Hitbox-API/blob/master/player/player.md#get-playerconfiglivemedia_id).
 
 [*] It looks like the only required field in the joinChannel message is the channel. So you can either fill the whole message out or just send one with the channel filled out.
 
